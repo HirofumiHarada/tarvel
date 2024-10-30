@@ -2,9 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['dl.airtable.com'], // 後でAirtableの画像を使用する際に必要
+    domains: ['dl.airtable.com'],
   },
-  distDir: '.next', // 出力ディレクトリを明示的に指定
+  output: 'standalone',
+  distDir: 'build'
 }
 
 module.exports = nextConfig;
